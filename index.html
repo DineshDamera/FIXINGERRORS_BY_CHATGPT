@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <title>Restaurant Website</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for improved contrast */
+        input[type="submit"] {
+            color: #fff; /* White text */
+            background-color: #0056b3; /* Darker blue background */
+            border: none; /* Remove button border for cleaner appearance */
+            padding: 8px 16px; /* Adjust padding for button size */
+            cursor: pointer; /* Add pointer cursor on hover */
+        }
+    </style>
 </head>
 
 <body>
@@ -32,7 +42,7 @@
                 <input type="email" id="email" name="email" required><br><br>
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                <input type="submit" value="Submit" style="color: #fff; background-color: #007AFF;">
+                <input type="submit" value="Submit">
             </form>
         </section>
     </main>
