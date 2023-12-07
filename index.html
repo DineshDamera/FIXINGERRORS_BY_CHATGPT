@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" style="color: #333;">Home</a></li>
+                <li><a href="#about" style="color: #333;">About</a></li>
+                <li><a href="#menu" style="color: #333;">Menu</a></li>
+                <li><a href="#events" style="color: #333;">Events</a></li>
+                <li><a href="#contact" style="color: #333;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Restaurant</h1>
+            <!-- Embedded YouTube Video -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Information about the restaurant...</p>
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <p>View our delicious offerings...</p>
+        </section>
+
+        <section id="events">
+            <h2>Special Events</h2>
+            <p>Details about upcoming events...</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Submit" style="color: #fff; background-color: #007AFF;">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Restaurant Name</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
